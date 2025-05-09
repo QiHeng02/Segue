@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Your To-Do List</h1>
+    <a href="/">Back to Dashboard</a>
+    <ul>
+        {% for task in tasks %}
+        <li>{{ task.displayName }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calendar</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Your Calendar</h1>
+    <a href="/">Back to Dashboard</a>
+    <ul>
+        {% for event in events %}
+        <li>
+            <strong>{{ event.subject }}</strong><br>
+            Start: {{ event.start.dateTime }}<br>
+            End: {{ event.end.dateTime }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

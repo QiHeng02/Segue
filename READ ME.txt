@@ -1,0 +1,10 @@
+Installation:
+
+- run setup.bat to download all python external libraries. (list of libraries used found in requirements.txt)
+
+- if you have trouble running setup.bat you probably dont have pip. install it here: https://phoenixnap.com/kb/install-pip-windows
+
+- to run program either run main.py in your IDE or just use run.bat
+
+- initial run will take awhile to load because its downloading a LLM (3GB). Depends on your internet connection but mine took 22mins and I have shit wifi
+

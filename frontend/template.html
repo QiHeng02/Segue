@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dashboard</title>
+    
+    <!-- Include Tailwind CSS stylesheet for fonts -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    
+    <!-- Include Google Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <style>
+        
+        .dashboard-card {
+            transition: transform 0.2s ease-in-out;  /* for slower transition for hover effect */
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+            /* alignment: stack vertically and center them */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            /* Remove default link styling */
+            text-decoration: none;
+            color: #374151;
+        }
+
+          /* Hover effect on buttons */
+        .dashboard-card:hover {
+            transform: scale(1.05);
+        }
+
+        body {
+            background-color: #f3f4f6;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+         /* Circular container for icons */
+        .icon-container {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 50%;
+        }
+
+        {% block mailstyle %} {% endblock %}
+
+    </style>
+    <body>
+        {% block index %} {% endblock %}
+        {% block mail %} {% endblock %}
+    </body>
+</head>
