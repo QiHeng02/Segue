@@ -102,6 +102,8 @@ Contributions make the open source community amazing! Any contributions you make
 
 Distributed under the MIT License. See `LICENSE` for more information.
 
+## Contacts
+Portfolio Site: https://qiheng-portfolio.netlify.app/
 Project Link: [https://github.com/QiHeng02/segue](https://github.com/QiHeng02/segue)
 
 ## Acknowledgments
